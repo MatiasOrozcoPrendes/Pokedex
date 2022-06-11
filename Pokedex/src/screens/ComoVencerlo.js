@@ -143,7 +143,7 @@ const ComoVencerlo = () => {
           style={styles.text}
          />
         <PokeImagen 
-          source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Math.trunc(item.numero)+".png"}}
+          source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+Math.trunc(item.numero)+".png"}}
           style={styles.image2}
         />
       </View>
@@ -199,7 +199,7 @@ const ComoVencerlo = () => {
                   style={styles.text}
                 />
                 <PokeImagen 
-                  source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Numero+".png"}}
+                  source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+Numero+".png"}}
                   style={styles.image}
                 />
               <FlatList

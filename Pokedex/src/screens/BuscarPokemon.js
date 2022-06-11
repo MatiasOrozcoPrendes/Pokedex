@@ -29,8 +29,8 @@ const BuscarPokemon = () => {
     .catch(function(error) {
       Alert.alert("El Pokémon no existe");
     });
-    
   }
+ 
   function CargoTipos(pTipos){
     let AuxTexto = ""
     pTipos.forEach((tipo) => {
@@ -93,14 +93,10 @@ const BuscarPokemon = () => {
                 />
                 <View style={styles.unaLinea}>
                   <PokeImagen 
-                    source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Numero+".png"}}
+                    source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+ Numero +".png"}}
                     style={styles.image}
                   />
-                  <PokeImagen 
-                    source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/"+Numero+".png"}}
-                    style={styles.image}
-                  />
-                </View>
+                  </View>
                 
             </View>
             <View style={styles.unaLinea}>
@@ -110,7 +106,7 @@ const BuscarPokemon = () => {
                 imageWidth= {60}
                 imagesHeight= {60}
                 btnColor="#819FF7"
-                source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+(Numero-1)+".png"}}
+                source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+(Numero - 1)+".png"}}
                 customPress={() => CargoPokemon(Numero-1)}
               />
               <PokeBotonImagen 
@@ -119,7 +115,7 @@ const BuscarPokemon = () => {
                 imageWidth= {80}
                 imagesHeight= {80}
                 btnColor="#819FF7"
-                source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+(Numero+1)+".png"}}
+                source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+(Numero + 1)+".png"}}
                 customPress={() => CargoPokemon(Numero+1)}
               />
             </View>

@@ -35,7 +35,7 @@ const MiEquipo = () => {
               imageWidth= {50}
               imagesHeight= {50}
               btnColor="819FF7"
-              source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+Math.trunc(item.numero)+".png"}}
+              source={{uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+Math.trunc(item.numero)+".png"}}
               customPress={() => borrarPokemon(item.nombre)}
             />
         </View>
