@@ -13,7 +13,6 @@ const PantallaPrincipal = ({ navigation }) => {
         "SELECT name FROM sqlite_master WHERE type='table' AND name='pokemons'",
         [],
          (tx, res) =>{
-          console.log('item:', res.rows.length);
           if (res.rows.length == 0) {
             txn.executeSql('DROP TABLE IF EXISTS pokemons', []);
             txn.executeSql(
@@ -25,12 +24,6 @@ const PantallaPrincipal = ({ navigation }) => {
       );
     });
   }, []);
-
-  const removeElementsOnDatabase = () => {
-    db.transaction( (txn) => {
-      txn.executeSql('DELETE FROM pokemons', []);
-    });
-  }
 
   return (
     <SafeAreaView style={styles.container}>
