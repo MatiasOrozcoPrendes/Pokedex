@@ -7,7 +7,6 @@ import DatabaseConnection from "../database/database-connection";
 const db = DatabaseConnection.getConnection();
 
 const ComoVencerlo = () => {
-  const [Busqueda, setBusqueda] = useState()
   const [Pokemon, setPokemon]=useState(25);
   const [Nombre, setNombre]=useState("");
   const [Numero, setNumero]=useState();

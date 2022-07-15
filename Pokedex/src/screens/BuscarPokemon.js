@@ -172,7 +172,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     fontStyle: 'italic',
-
   },
   cartaPrincipal: {
     margin: 5,
@@ -215,7 +214,6 @@ const styles = StyleSheet.create({
     borderColor: '#d3d3d3',
     
   },
-
   imageBack: {
     flex: 1,
     justifyContent: "center"

@@ -220,7 +220,6 @@ const MiEquipo = () => {
             </View>
           </View>
           </KeyboardAvoidingView>
-      
         </View>
       </ImageBackground>
     </SafeAreaView>
